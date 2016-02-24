@@ -1,0 +1,29 @@
+证明 $Fib(n) = \frac{\phi^{n} - \psi^{n}}{\sqrt{5}}$
+
+假设 $Fib(n) = \frac{\phi^{n} - \psi^{n}}{\sqrt{5}}$ 成立
+
+当 $n = 0$, $Fib(0) = \frac{\phi^0 - \psi^0}{\sqrt{5}} = 0$
+
+当 $n = 1$, $Fib(1) = \frac{\phi^1 - \psi^1}{\sqrt{5}} = 1$
+
+又因为 $Fib(n+1) = \frac{\phi^{n+1} - \psi^{n+1}}{\sqrt{5}}$
+
+$Fib(n+2) = \frac{\phi^{n+2} - \psi^{n+2}}{\sqrt{5}}$
+
+$Fib(n) + Fib(n+1) = \frac{\phi^{n+2} - \psi^{n+2}}{\sqrt{5}} = Fib(n + 2)$
+
+所以 $Fib(n) = \frac{\phi^n - \psi^n}{\sqrt{5}}$ 成立
+
+因为 $Fib(n) = \frac{\phi^n - \psi^n}{\sqrt{5}} = \frac{\phi^n}{sqrt{5}} - \frac{\psi^n}{sqrt{5}}$
+
+$\frac{1}{\sqrt{5}} < \frac{1}{2}$
+
+$|\psi| = |\frac{1-\sqrt{5}}{2}| < 1$
+
+所以 $|\frac{\psi^n}{\sqrt{5}}| < \frac{1}{2}$
+
+所以 $|Fib(n) - \frac{\phi^n}{sqrt{5}}| < \frac{1}{2}$
+
+从而 $Fib(n)$ 是与 $\frac{\phi^n}{sqrt{5}}$ 最接近的整数
+
+
